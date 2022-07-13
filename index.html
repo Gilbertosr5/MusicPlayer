@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MusicPlayer</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <div class="container">
+            <main class="player">
+                <div class="track">
+                    <div id="trackArt" class="track-art"></div>
+                    <h2 id="trackTitle" class="track-title">Music Name</h2>
+                    <p id="trackAuthor" class="track-author">Author Name</p>
+                </div>
+                <div class="duration">
+                    <div class="duration-bar">
+                        <progress value="1" max="1"></progress>
+                        <div class="point"></div>
+                    </div>
+                    <div class="duration-time">
+                        <p class="curr-time">0:00</p>
+                        <p class="total-time">0:00</p>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <i id="btnPrev" class="fa-solid fa-backward-step"></i>
+                    <i id="btnPause" class="fa-solid fa-circle-pause"></i>
+                    <i id="btnPlay" class="fa-solid fa-circle-play"></i>
+                    <i id="btnNext" class="fa-solid fa-forward-step"></i>
+                </div>
+                <div class="footer">
+                    <h1>Music Player</h1>
+                </div>
+            </main>
+        </div>
+
+        <audio id="audio" src="musics/colossenses1.mp3"></audio>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
